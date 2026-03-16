@@ -9,4 +9,9 @@ as per [priorityprefix](https://pypi.org/project/priorityprefix/).
 * Shut down tidily when sent a `SIGINT`,
 even if handling websockets that will never end.
 
+## Findings:
+
+* I have completely failed to get Hypercorn to shut down if there
+are websockets open.
+Whereas uvicorn is fine, and handles an interrupt with no issue.
 

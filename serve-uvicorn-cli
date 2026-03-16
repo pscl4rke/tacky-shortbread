@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Unfortunately "--log-level debug" affects uvicorn's log messages
+# but does nothing for my own.
+
+uvicorn \
+    app:application
