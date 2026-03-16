@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# The "--log-level DEBUG" option is ignored
+
+hypercorn \
+    app:application
