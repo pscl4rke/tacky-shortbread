@@ -17,4 +17,6 @@ Whereas uvicorn and daphne are fine, and handles an interrupt with no issue.
 * Hmm... daphne's gives warnings if a websocket client disconnects,
 complaining that the task took too long to shut down.
 I should investigate more generally if my handlers get tidily shut down.
+* Gunicorn really, *really* resisted any kind of non-CLI (API) use.
+* Gunicorn also threw `RuntimeError`s if a websocket client disconnected.
 
