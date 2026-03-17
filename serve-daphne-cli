@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# https://github.com/django/daphne/blob/main/daphne/cli.py
+# verbosity:
+#   0=warning, 1=info, 2=debug, 3=debug+asyncio.debug
+
+daphne \
+    --verbosity 2 \
+    --log-fmt "%(name)s:%(lineno)s %(levelname)s %(message)s" \
+    app:application
