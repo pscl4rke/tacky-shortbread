@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Yeah... for some reason "importlib.import_module" can't find "app",
+# even though it works fine in a repl.
+
+aiohttp-asgi \
+    app:application

@@ -19,4 +19,5 @@ complaining that the task took too long to shut down.
 I should investigate more generally if my handlers get tidily shut down.
 * Gunicorn really, *really* resisted any kind of non-CLI (API) use.
 * Gunicorn also threw `RuntimeError`s if a websocket client disconnected.
+* Aiohttp needed a third-party adaptor, and everything was very buggy.
 
