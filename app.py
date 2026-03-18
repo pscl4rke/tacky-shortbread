@@ -27,6 +27,7 @@ async def application(scope, receive, send):
         await send({
             "type": "http.response.start",
             "status": 200,
+            #"headers": [],  # technically optional, except for granian
         })
         await send({
             "type": "http.response.body",

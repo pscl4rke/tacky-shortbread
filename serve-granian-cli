@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Note this only understands http.response.start messages which contain a headers object
+# Also --log-level has no effect
+
+granian \
+    --log-level debug \
+    --interface asgi \
+    app:application
