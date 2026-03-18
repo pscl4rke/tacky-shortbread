@@ -4,4 +4,5 @@
 # but does nothing for my own.
 
 uvicorn \
+    --log-config logconf.json \
     app:application

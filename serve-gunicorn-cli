@@ -2,4 +2,5 @@
 
 gunicorn \
     --worker-class asgi \
+    --log-config-json logconf.json \
     app:application

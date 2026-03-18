@@ -1,0 +1,43 @@
+{
+
+    "root": {
+        "handlers": ["stdio"],
+        "level": "DEBUG"
+    },
+
+    "loggers": {
+        "asyncio": {
+            "level": "INFO"
+        },
+        "uvicorn": {
+            "#NB": "handler already installed, don't add another",
+            "level": "INFO"
+        },
+        "foo.bar": {
+            "handlers": ["stdio"],
+            "level": "DEBUG"
+        },
+        "foo.baz": {
+            "handlers": ["stdio"],
+            "level": "DEBUG"
+        }
+    },
+
+    "handlers": {
+        "stdio": {
+            "class": "logging.StreamHandler",
+            "formatter": "default",
+            "filters": [],
+            "stream": "ext://sys.stderr"
+        }
+    },
+
+    "formatters": {
+        "default": {
+            "()": "priorityprefix.PriorityFormatter",
+            "format": "%(name)s:%(lineno)s %(levelname)s %(message)s"
+        }
+    },
+
+    "version": 1
+}

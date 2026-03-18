@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-# The "--log-level DEBUG" option is ignored
+# None of these seem to work properly, or at all...
+#    --log-level DEBUG \
+#    --log-config json:logconf.json \
+#    --error-logfile "-" \
+#    --access-logfile "-" \
 
 hypercorn \
     app:application
