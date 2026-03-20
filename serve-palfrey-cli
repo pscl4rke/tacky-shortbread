@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+palfrey \
+    --log-config logconf.json \
+    app:application

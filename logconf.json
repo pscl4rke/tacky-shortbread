@@ -13,6 +13,10 @@
             "#NB": "handler already installed, don't add another",
             "level": "INFO"
         },
+        "palfrey": {
+            "#NB": "handler already installed, don't add another",
+            "level": "INFO"
+        },
         "foo.bar": {
             "handlers": ["stdio"],
             "level": "DEBUG"

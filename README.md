@@ -13,6 +13,7 @@ even if handling websockets that will never end.
 
 * I have completely failed to get Hypercorn to shut down if there
 are websockets open.
+The same is true of palfrey.
 Whereas uvicorn and daphne are fine, and handles an interrupt with no issue.
 * Hmm... daphne's gives warnings if a websocket client disconnects,
 complaining that the task took too long to shut down.
